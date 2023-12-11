@@ -25,6 +25,7 @@ body * {
 main {
     width: 360px;
     margin: 56px auto;
+    padding: 0px 24px;
 }
 
 #profile {
@@ -66,7 +67,7 @@ ul li a  {
     border-radius: 10px;
     font-weight: 500;
     border: 1px solid rgb(133, 133, 133);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     padding: 16px 24px;
 
     display: flex;
