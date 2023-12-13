@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: white;
+    --bg-url:url(../assets/bg-mobile.jpg);
+    --stroke-color:  rgba(255, 255, 255, 0.5);
+    --bg-color-a:rgba(255, 255, 255, 0.1);
+}
+
+.claro {
+    --text-color:black;
+    --bg-url:url(../assets/bg-mobile-light.jpg);
+    --stroke-color:  rgba(0, 0, 0, 0.5);
+    --bg-color-a:rgba(0, 0, 0, 0.05);
+}
+
 body {
     /* background-image: url(../assets/bg-mobile.jpg);
     background-repeat: no-repeat;
@@ -15,12 +29,12 @@ body {
     /* 
     shorthand
     background:color img repeat center/cover */
-    background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
     font-family: 'inter', sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
 main {
@@ -40,7 +54,6 @@ main {
 }
 
 #profile p {
-    color: white;
     font-weight: 500;
     font-size: 1em;
     line-height: 24px ;
@@ -49,7 +62,7 @@ main {
 /* links */
 
 #lista li a {
-    color: white;
+    
     text-decoration: none;
 }
 
@@ -64,10 +77,10 @@ ul {
 
 
 ul li a  {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-color-a);
     border-radius: 10px;
     font-weight: 500;
-    border: 1px solid rgb(133, 133, 133);
+    border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
     padding: 16px 24px;
 
@@ -110,3 +123,10 @@ ul li a:hover {
 #social a:hover {
     background-color: gray;
 }
+
+footer {
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
