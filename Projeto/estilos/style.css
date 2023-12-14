@@ -12,7 +12,8 @@
     --stroke-color:  rgba(255, 255, 255, 0.5);
     --bg-color-a:rgba(255, 255, 255, 0.1);
     --bg-color-a-hover: rgba(128, 128, 128, 0.05);
-    
+    --border-hover: white;
+    --social-color: gray;
 }
 
 .claro {
@@ -21,7 +22,8 @@
     --stroke-color:  rgba(0, 0, 0, 0.5);
     --bg-color-a:rgba(0, 0, 0, 0.05);
     --bg-color-a-hover: rgba(0, 0, 0, 0.02);
-
+    --border-hover: black;
+    --social-color: rgba(0, 0, 0, 0.2); 
 }
 
 body {
@@ -96,7 +98,7 @@ ul li a  {
 }
 
 ul li a:hover {
-    border: 1.5px solid white;
+    border: 1.5px solid var(--border-hover);
     background-color: var(--bg-color-a-hover);
 
     
@@ -125,7 +127,7 @@ ul li a:hover {
 }
 
 #social a:hover {
-    background-color: gray;
+    background-color: var(--social-color);
 }
 
 footer {
