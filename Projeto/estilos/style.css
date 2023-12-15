@@ -14,6 +14,7 @@
     --bg-color-a-hover: rgba(128, 128, 128, 0.05);
     --border-hover: white;
     --social-color: gray;
+    --botao-bg: url(../assets/moon-stars.svg);
 }
 
 .claro {
@@ -24,6 +25,7 @@
     --bg-color-a-hover: rgba(0, 0, 0, 0.02);
     --border-hover: black;
     --social-color: rgba(0, 0, 0, 0.2); 
+    --botao-bg: url(../assets/sun.svg);
 }
 
 body {
@@ -65,16 +67,53 @@ main {
     line-height: 24px ;
 }
 
+#botao {
+    position: relative;
+    width: 64px;
+    margin: auto;
+    padding: 4px 0px;
+}
+
+#botao button{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    background-image: var(--botao-bg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.claro #botao button {
+    right: 0;
+    left: initial;
+}
+
+#botao span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--bg-color-a);
+    border: 1px solid var(--stroke-color);
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    
+}
 /* links */
 
 #lista li a {
-    
     text-decoration: none;
 }
 
 ul {
     list-style: none; 
-    padding: 24px;
+    padding: 24px 0px;
 
     display:flex ;
     flex-direction: column;
