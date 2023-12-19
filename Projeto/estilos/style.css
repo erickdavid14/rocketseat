@@ -14,7 +14,7 @@
     --bg-color-a-hover: rgba(128, 128, 128, 0.05);
     --border-hover: white;
     --social-color: gray;
-    --botao-bg: url(../assets/moon-stars.svg);
+    --botao-bg: url(../assets/sun.svg);
 }
 
 .claro {
@@ -25,7 +25,7 @@
     --bg-color-a-hover: rgba(0, 0, 0, 0.02);
     --border-hover: black;
     --social-color: rgba(0, 0, 0, 0.2); 
-    --botao-bg: url(../assets/sun.svg);
+    --botao-bg:  url(../assets/moon-stars.svg);
 }
 
 body {
