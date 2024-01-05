@@ -140,7 +140,7 @@ ul li a  {
 ul li a:hover {
     border: 1.5px solid var(--border-hover);
     background-color: var(--bg-color-a-hover);
-
+    
     
     transform: translateY(-5px);
     
